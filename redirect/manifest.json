@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Google to DuckDuckGo Redirect",
+    "version": "1.0",
+    "description": "Redirect Google searches to DuckDuckGo.",
+    "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": [
+      "*://www.google.com/search*"
+    ],
+    "action": {
+      "default_title": "Redirecting Google..."
+    },
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "redirect-rules",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    }
+  }
+  
