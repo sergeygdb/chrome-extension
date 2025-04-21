@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Elements from a page",
+  "version": "1.1",
+  "description": "Instantly hides elements",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://html.duckduckgo.com/html*"],
+      "js": ["content.js"],
+      "css": ["hide.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

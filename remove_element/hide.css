@@ -1,0 +1,4 @@
+.logo-wrap--home,
+.header__logo-wrap {
+  display: none !important;
+}
